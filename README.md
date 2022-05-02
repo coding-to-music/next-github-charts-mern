@@ -1,3 +1,37 @@
+# next-github-charts-mern
+
+# 🚀 Javascript full-stack 🚀
+
+https://github.com/coding-to-music/next-github-charts-mern
+
+https://next-github-charts-mern.vercel.app
+
+https://next-github-charts-mern.herokuapp.com
+
+by Greg Murray gmmurray https://github.com/gmmurray
+
+https://experiencer.dev
+
+https://github.com/gmmurray/experiencer
+
+## Build Warnings
+
+```java
+
+```
+
+## Build Errors
+
+```java
+
+```
+
+## Environment Values
+
+```java
+
+```
+
 ## Project Name
 
 Experiencer
@@ -25,3 +59,39 @@ The app is deployed at [this url](https://experiencer.dev)
 ## Status
 
 Core functionality completed, needs redesign (mostly theming, colors, etc.) and polish
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/next-github-charts-mern.git
+git push -u origin main
+```
+
+## Heroku
+
+```java
+heroku create next-github-charts-mern
+```
+
+## Heroku MongoDB Environment Variables
+
+```java
+heroku config:set
+
+heroku config:set MONGODB_URI="your value"
+```
+
+## Push to Heroku
+
+```java
+git push heroku
+
+# or
+
+npm run deploy
+```
