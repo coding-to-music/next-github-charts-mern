@@ -20,10 +20,30 @@ https://github.com/gmmurray/experiencer
 
 ```
 
-## Build Errors
+## Build Errors on Vercel
 
 ```java
-
+info  - Checking validity of types...
+Failed to compile.
+./components/github/GithubUser.tsx:60:20
+Type error: No overload matches this call.
+  Overload 1 of 2, '(props: { component: ElementType<any>; } & { children?: ReactNode; classes?: Partial<ContainerClasses> | undefined; disableGutters?: boolean | undefined; fixed?: boolean | undefined; maxWidth?: false | ... 1 more ... | undefined; sx?: SxProps<...> | undefined; } & CommonProps & Omit<...>): Element', gave the following error.
+    Type '{ pt: string | number | (string & {}) | Property.PaddingTop<string | number>[] | (Property.PaddingTop<string | number> | Property.PaddingTop<string | number>[] | null | undefined)[] | ... 7 more ... | undefined; textAlign: "left"; }' is not assignable to type 'SxProps<Theme> | undefined'.
+      Type '{ pt: string | number | (string & {}) | Property.PaddingTop<string | number>[] | (Property.PaddingTop<string | number> | Property.PaddingTop<string | number>[] | null | undefined)[] | ... 7 more ... | undefined; textAlign: "left"; }' is not assignable to type 'undefined'.
+  Overload 2 of 2, '(props: DefaultComponentProps<ContainerTypeMap<{}, "div">>): Element', gave the following error.
+    Type '{ pt: string | number | (string & {}) | Property.PaddingTop<string | number>[] | (Property.PaddingTop<string | number> | Property.PaddingTop<string | number>[] | null | undefined)[] | ... 7 more ... | undefined; textAlign: "left"; }' is not assignable to type 'SxProps<Theme> | undefined'.
+      Type '{ pt: string | number | (string & {}) | Property.PaddingTop<string | number>[] | (Property.PaddingTop<string | number> | Property.PaddingTop<string | number>[] | null | undefined)[] | ... 7 more ... | undefined; textAlign: "left"; }' is not assignable to type 'undefined'.
+  58 |
+  59 |     return (
+> 60 |         <Container sx={{ pt: containerProps.pt, textAlign: 'left' }}>
+     |                    ^
+  61 |             <Stack direction="row" spacing={2}>
+  62 |                 <Avatar
+  63 |                     // @ts-ignore
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! next-github-charts-mern@ build: `next build`
+npm ERR! Exit status 1
 ```
 
 ## Environment Values
